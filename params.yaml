@@ -1,0 +1,4 @@
+mydict:
+  train_test_size: [0.70,0.30]
+  ccp_alpha: 0.12345
+  min_sample_split: 9

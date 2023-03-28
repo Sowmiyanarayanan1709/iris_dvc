@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python py_code.py --train_test_size 0.7 0.3 --ccp_alpha 0.12345 --min_sample_split
+      9
+    deps:
+    - path: Iris.csv
+      md5: 717820ef0af287ff346c5cabfb4c612c
+      size: 5107
+    - path: py_code.py
+      md5: 7e55ad6bd6dd08b215a01605aef8aa35
+      size: 2139
+    outs:
+    - path: C:\Users\s123\Desktop\test\models\/0.7_0.12345_model_rf
+      md5: c3eacddd66d31e004f363b4be70104cf
+      size: 72462

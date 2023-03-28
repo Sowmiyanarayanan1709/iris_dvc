@@ -1,0 +1,9 @@
+# dvc.yaml
+stages:
+  train:
+    cmd:  python py_code.py ${mydict}
+    deps:
+      - py_code.py
+      - Iris.csv
+    outs:
+      - C:\Users\s123\Desktop\test\models\/${mydict[train_test_size][0]}_${mydict[ccp_alpha]}_model_rf
